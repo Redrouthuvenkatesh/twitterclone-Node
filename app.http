@@ -1,0 +1,56 @@
+
+POST http://localhost:3000/register/
+content-Type: application/json
+{
+  "username": "venky15",
+  "password": "Venky@_123",
+  "name": "venkatesh",
+  "gender": "male"
+}
+
+###
+
+
+POST http://localhost:3000/login/
+content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzA5MTI2OTgyfQ.H_eqXG5_Tk1Igna-BeJqT8uL5bOKxqavs-tv2l12yo8
+
+###
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTM5NTI4fQ.Q8PmWhb0Cjk08f4ndtIJtfzX86pkPIF4oNUl4ntqp7Y
+
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTI5NTA2fQ.jzG3LBw9XAemU3_sMu8ISI3LKY82cnPs9WogD3eaNfU
+
+##
+GET http://localhost:3000/tweets/6/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTk2NjAxfQ.CIBDX1Jrv0casF5HJ6suJV2sASiV5kDoCygk1N4G-TM
+
+###
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTg1ODA4fQ.X9wwuj89IZ0gPmFD1e6AHwwzX_Q6d-tCZr9H7Rn-bBI
+
+GET http://localhost:3000/tweets/2/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTg3NTU4fQ.I_MIeSCApp3ieiuh2xWh97XRaH5_QpEq3Ikp4cfNBGM
+
+###
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTkxMzI4fQ.9hrqOHzUzXud4DAET7afY3zlH7u7DxvETXAskFvyewE
+
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTkxNzI2fQ.6KoO2A26KmpU_25vpYhOIWy95a3vEbb-Cu5rZ9VJezI
+{
+   "tweet": "The Mornings..."
+}
+
+DELETE http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcl9pZCI6MiwiaWF0IjoxNzA5MTkzMjE2fQ.qpdM7ALLd9JGZeyzQELCrdBg9Ok_at-fvggXvnohx4Q
+
